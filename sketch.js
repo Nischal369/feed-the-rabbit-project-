@@ -29,3 +29,17 @@ function draw() {
 
   drawSprites();
 }
+function createApples() {
+apple=createSprite(random(50,350),40,10,10)
+apple.addImage(appleImg);
+apple.scale=0.1;
+apple.velocityY=5;
+apple.lifetime=150;
+}
+function createLeaves() {
+leaf=createSprite(random(50,350),40,10,10)
+leaf.addImage(leafImg);
+leaf.scale=0.1;
+leaf.velocityY=5;
+leaf.lifetime=150;
+}
